@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:visited {
+        color: darkblue;
+    }
+
+    a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+
+    a:active{
+        color: lawngreen;
+    }
+
+    a::after{
+        content: ' [link]';
+        text-decoration: none;
+        font-weight: normal;
+        color: darkgrey;
+    }
+</style>
+
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://pt.wikipedia.org/wiki/Homem-Aranha"  target="_blank">Homem-Aranha</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Homem_de_Ferro" target="_blank">Homem de Ferro</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Capit%C3%A3o_Am%C3%A9rica" target="_blank">Capitão America</a></li>
+    </ul>
+</body>
+
+</html>
