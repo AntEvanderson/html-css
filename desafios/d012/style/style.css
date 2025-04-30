@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh; /*Tamanho mínimo do corpo do HTML, viewport: 100% da altura do corpo*/
+    
+    background-color: rgba(169, 169, 169, 0.199);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header>h1{
+    padding-top: 50px; /*padding acima*/
+
+    /*text-transform: uppercase; Transformar tudo em letra maiúscula*/
+   
+    font-variant: small-caps;/*Deixa todas as letras maiusculas, Mas as iniciais são maiores*/
+}
+
+header>p{
+    padding-bottom: 50px; /*padding abaixo*/
+}
+
+header a, footer a{
+    color: whitesmoke;
+    text-decoration: none; /*Tira o Underline da palavra*/
+    font-weight: bolder; /*Deixa a fonte em negrito*/
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline; /*Ao passar o mouse aparece o Underline*/
+}
+
+section{
+    padding-top: 10vh; /*padding acima, 10% da altura da tela*/
+    padding-bottom: 10vh;/*padding abaixo, 10% da altura tela*/
+    line-height: 2em;/*Espaçamento entre as frases*/
+    padding-left: 30px;/*Afastar mais ao centro*/
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(44, 44, 44, 0.377);
+    color: white;
+
+}
+
+section.imagem>p{
+    width: 400px; /*Largura da caixa dentro do parágrafo*/
+    background-color: rgba(0, 0, 0, 0.253); /*Cria uma caixa dentro do parágrafo*/
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
