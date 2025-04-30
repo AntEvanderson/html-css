@@ -14,6 +14,6 @@
     <a href="https://antevanderson.github.io/projeto-android/">Projeto Android</a>
     </li>
     <li>
-    <a href="https://github.com/AntEvanderson/projeto-cordel">Projeto Cordel</a>
+    <a href="https://antevanderson.github.io/projeto-cordel/">Projeto Cordel</a>
     </li>
 </ul>
