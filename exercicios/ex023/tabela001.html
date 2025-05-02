@@ -11,23 +11,20 @@
         }
 
         table {
-            border: 2px solid black;
             border-collapse: collapse;
             width: 400px;
-        }
-
-        tr.linha {
-            background-color: rgba(124, 124, 124, 0.308);
+            height: 400px;
         }
 
         td {
             border: 2px solid black;
             padding: 8px;
-            text-align: right;
+            text-align: center; /*Alinhamento Horizontal*/
+            vertical-align: middle; /*Alinhamento Horizontal*/
         }
 
-        td.dado {
-            background-color: rgba(0, 4, 255, 0.384);
+        .numero{
+            text-align: right;
         }
     </style>
 </head>
@@ -43,34 +40,24 @@
     -->
     <table>
         <tr class="linha"> <!--Primeira Linha-->
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
+            <td>Cotação em Yen</td>
+            <td>&#x1F1EF &#x1F1F5</td>
+            <td class="numero">¥: 100.000,00</td>
         </tr>
         <tr> <!--Segunda Linha-->
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
+            <td>Cotação em Reais</td>
+            <td>&#x1F1E7 &#x1F1F7</td>
+            <td class="numero">R$: 2.000,00</td>
         </tr>
         <tr class="linha"> <!--Terceira Linha-->
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
+            <td>Cotação em Dólar</td>
+            <td>&#x1F1FA &#x1F1F8</td>
+            <td class="numero">$: 3.000,00</td>
         </tr>
         <tr><!--Quarta Linha-->
-            <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
-        </tr>
-        <tr>
-            <td>A5</td>
-            <td>B5</td>
-            <td class="dado">N/A</td>
-        </tr>
-        <tr>
-            <td>A6</td>
-            <td class="dado">N/A</td>
-            <td>C6</td>
+            <td>Cotação em Libras</td>
+            <td>&#x1F1EC &#x1F1E7</td>
+            <td class="numero">£: 5.000.000,00</td>
         </tr>
     </table>
 </body>
