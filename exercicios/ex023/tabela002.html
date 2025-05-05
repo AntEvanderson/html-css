@@ -10,13 +10,12 @@
         }
 
         table{
-            border: 1px solid black;
             border-collapse: collapse;
-            width: 400px;
-
+            width: 500px;
+            position: relative;
         }
 
-        td{
+        td, th{
             border: 1px solid black;
             padding: 10px;
             text-align: left;
@@ -27,15 +26,15 @@
             text-align: right;
         }
 
-        th{
-            border: 1px solid black;
-            padding: 10px;
+        thead{
+            background-color: rgb(128, 128, 128);
             color: white;
         }
 
-        thead{
-            background-color: rgba(128, 128, 128, 0.5);
-            color: white;
+        thead>tr>th{
+            position: sticky;
+            top: 0px;
+            background-color: rgb(128, 128, 128);
         }
 
         tfoot{
@@ -43,16 +42,30 @@
             text-align: left;
         }
 
+        tbody>tr:nth-child(2n){
+            background-color: lightgrey;
+        }
+
         td.totalPopulacao{
             text-align: right;
             color: white;
         }
+        
+        caption{
+            border: 1px solid black;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -61,10 +74,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População da Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -180,10 +194,29 @@
         </tbody>
         <tfoot> 
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="totalPopulacao"><strong>212 283 750</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis laborum magnam. Ut sequi eaque iste, corporis sed recusandae, veritatis sapiente, debitis numquam velit error maiores facilis. Pariatur, quaerat in?
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deleniti possimus dolor nisi! Temporibus, corrupti sequi fugit asperiores harum rem cumque libero ea corporis quas, optio consectetur beatae, aliquam culpa.
+
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque dolore impedit suscipit repellat nesciunt blanditiis minus pariatur asperiores, aperiam sit, vero molestiae inventore quos est consequatur enim officiis totam velit.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corporis non numquam fuga sit minima cumque, aspernatur tempore iusto, ad minus quae ea doloribus omnis, delectus dicta incidunt voluptatibus maxime!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates alias quaerat, doloremque porro ducimus corporis vero molestias ipsam quasi facere, quisquam earum provident perferendis consequuntur. Voluptatem beatae assumenda recusandae earum.
+
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, cupiditate unde distinctio voluptatibus ut quam harum laboriosam repudiandae optio nesciunt similique tempore blanditiis illum, nostrum aliquam porro totam corporis a.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit aliquam, dolorum ab voluptatem quas! Asperiores, nisi provident. Totam deserunt velit magni ad veniam a deleniti tenetur ea debitis adipisci?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A labore atque tenetur magni inventore repellat quos temporibus doloribus sed corrupti eum, minima nisi pariatur numquam iure debitis dolorum nulla quasi.
+
+    </p>
 </body>
 </html>
