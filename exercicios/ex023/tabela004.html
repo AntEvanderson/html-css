@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+    <table>
+        <caption>Filmes favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col" >Nomes</th>
+                <th colspan="3" scope="colgroup" >Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Luana Sá</td>
+                <td>Barbie</td>
+                <td>A Vida é Bela</td>
+                <td>La La Land</td>
+            </tr>
+            <tr>
+                <td>Mariana Nunes</td>
+                <td>Titanic</td>
+                <td>Madalena</td>
+                <td>Amor e Paixão</td>
+            </tr>
+            <tr>
+                <td>Maria do Carmo</td>
+                <td>Tieta</td>
+                <td>Rei do Gado</td>
+                <td>Pantanal</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Mauro Cezar</td>
+                <td>Vingadores</td>
+                <td>Spider Man</td>
+                <td>Velozes e Furiosos</td>
+            </tr>
+            <tr>
+                <td>Cabral Jr.</td>
+                <td>Capitão America</td>
+                <td>Tropa de Elite</td>
+                <td>Capitão Phillips</td>
+            </tr>
+            <tr>
+                <td>Felipe Silva</td>
+                <td>Coringa 2</td>
+                <td>A Origem</td>
+                <td>Ferrari 312B </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
