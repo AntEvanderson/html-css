@@ -16,4 +16,7 @@
     <li>
     <a href="https://antevanderson.github.io/projeto-cordel/">Projeto Cordel</a>
     </li>
+    <li>
+    <a href=" https://antevanderson.github.io/projeto-social/">Projeto Redes Sociais</a>
+    </li>
 </ul>
